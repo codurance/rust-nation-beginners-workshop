@@ -92,8 +92,6 @@ fn main() {
     //     level: 22,
     // };
     //
-    // // we want to clone so we can compare before-and-after effects of casting the spell,
-    // // but we don't want to introduce that concept to the student yet, so we have to do it manually
     // let clone = Player { ..no_mana_wizard };
     //
     // assert_eq!(no_mana_wizard.cast_spell(3), 0);
