@@ -39,4 +39,7 @@ fn main() {
     //Assert that poison_potion is a poison potion for 5 HP
     assert!(matches!(poison_potion, Item::PoisonPotion(5)));
     assert_eq!(0, player_inventory.len());
+
+    let nothing = player_inventory.get(0);
+    assert!(matches!(nothing, None));
 }
