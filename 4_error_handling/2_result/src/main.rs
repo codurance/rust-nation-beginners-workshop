@@ -12,6 +12,10 @@ fn log_error(err: String) {
     println!("{err}");
 }
 
+fn log_success(temp: i32) {
+    println!("Temperature changed to {temp}");
+}
+
 fn set_temperature(temp: i32) {
     unimplemented!();
 }

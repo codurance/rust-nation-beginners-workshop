@@ -4,5 +4,5 @@ Use `cargo run` to run the project. Implement `set_temperature` such that it cor
 
 ## Hints
 
-* The unity type, `()`, represents nothing - the lack of something as a type. Sometimes it is used as the result type of a `Result` because there is no result to return.
-* 
+* The unit type, `()`, represents nothing - the lack of something as a type. Sometimes it is used as the result type of a `Result` because there is no result to return.
+ 
