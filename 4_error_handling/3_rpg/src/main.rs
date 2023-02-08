@@ -29,7 +29,7 @@ fn main() {
     assert_eq!(revived_player.mana, Some(100));
     assert_eq!(revived_player.level, dead_player.level);
 
-    //=== 2, revive dead level 9 player
+    //=== 2, revive dead level 9 player without mana
 
     // let dead_player = Player {
     //     health: 0,
@@ -43,7 +43,7 @@ fn main() {
     // assert_eq!(revived_player.mana, None);
     // assert_eq!(revived_player.level, dead_player.level);
 
-    //=== 3, revive dead level 10 player
+    //=== 3, revive dead level 10 player with mana
 
     // let dead_player = Player {
     //     health: 0,
@@ -66,7 +66,7 @@ fn main() {
     // };
     // assert!(alive_player.revive().is_none());
 
-    //=== 5, casting a spell
+    //=== 5, casting a spell does mana cost times two damage and reduces mana
 
     // let health: u32 = 99;
     // let mana: u32 = 100;
@@ -84,7 +84,7 @@ fn main() {
     // assert_eq!(accomplished_wizard.mana, Some(mana - mana_cost));
     // assert_eq!(accomplished_wizard.level, level);
 
-    //=== 6, cast spell w/ insufficient mana
+    //=== 6, cast spell w/ insufficient mana fails
 
     // let mut no_mana_wizard = Player {
     //     health: 56,
@@ -99,7 +99,7 @@ fn main() {
     // assert_eq!(no_mana_wizard.mana, clone.mana);
     // assert_eq!(no_mana_wizard.level, clone.level);
 
-    //=== 7, cast with no mana pool
+    //=== 7, cast with no mana pool fails and costs health instead of mana
 
     // let mana_cost: u32 = 10;
     //
