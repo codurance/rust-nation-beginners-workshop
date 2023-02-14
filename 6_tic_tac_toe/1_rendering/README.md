@@ -25,9 +25,8 @@ The only thing that is implemented is that a new game can be created with `Game:
 |---------------------------------------|---------------------------------------------------|
 | N/A                                   | <pre>   \n</pre><pre>   \n   </pre><pre>   </pre> |
 | `make_move(0,0)`                      | <pre>O  \n</pre><pre>   \n   </pre><pre>   </pre> |
-| `make_move(0,0)`<br/>`make_move(1,0)` | <pre>OX \n</pre><pre>   \n   </pre><pre>   </pre> |
-| `make_move(0,0)`<br/>`make_move(1,0)` | <pre>OX \n</pre><pre>   \n   </pre><pre>   </pre> |
 | `make_move(0, 1)`                     | <pre>   \n</pre><pre>O  \n   </pre><pre>   </pre> |
+| `make_move(0,0)`<br/>`make_move(1,0)` | <pre>OX \n</pre><pre>   \n   </pre><pre>   </pre> |
 
 ## Hints
 
