@@ -80,14 +80,15 @@ mod tests {
             actual)
     }
 
-    // #[test]
-    // fn first_move_should_place_x_on_screen() {
-    //     let mut game = Game::new();
-    //
-    //     game = game.make_move(0, 0).unwrap();
-    //
-    //     let actual = game.render();
-    //     assert_eq!(concat!("O  \n", "   \n", "   "), actual)
-    // }
+    #[test]
+    #[ignore]
+    fn first_move_should_place_O_on_screen() {
+        let mut game = Game::new();
+    
+        game = game.make_move(0, 0).unwrap();
+    
+        let actual = game.render();
+        assert_eq!(concat!("O  \n", "   \n", "   "), actual)
+    }
 
 }

@@ -107,7 +107,7 @@ mod tests {
     }
 
     #[test]
-    fn first_move_should_place_x_on_screen() {
+    fn first_move_should_place_O_on_screen() {
         let mut game = Game::new();
 
         game = game.make_move(0, 0).unwrap();
@@ -117,7 +117,7 @@ mod tests {
     }
 
     #[test]
-    fn second_move_should_place_o_on_screen() {
+    fn second_move_should_place_X_on_screen() {
         let mut game = Game::new();
 
         game = game.make_move(0, 0).unwrap();

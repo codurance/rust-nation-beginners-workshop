@@ -1,6 +1,6 @@
 # Rust Workshop Tic-Tac-Toe
 
-This workshop contains a basic Rust programming challenge for beginner workshops, using Tic-Tac-Toe aka Norts and Crosses. It is intended that this workshop is done in-person but can be continued at your leisure in a self-directed learning style, in the highly likely scenario that we do not finish during the session.
+This workshop contains a basic Rust programming challenge for beginner workshops, using Tic-Tac-Toe aka Noughts and Crosses. It is intended that this workshop is done in-person but can be continued at your leisure in a self-directed learning style, in the highly likely scenario that we do not finish during the session.
 
 The workshop is designed in such a way that practicing Test Driven Development (TDD) is very fitting, and you will find it a lot easier if you write tests before your functionality.
 

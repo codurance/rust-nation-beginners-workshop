@@ -16,7 +16,7 @@ The only thing that is implemented is that a new game can be created with `Game:
 ## Goals
 
 * Pass the first test
-* Uncomment the second test and make it pass
+* Un-ignore the second test and make it pass
 * Using the first two tests as examples, implement the remaining test cases (below) and make them pass.
 
 ## Test Cases
