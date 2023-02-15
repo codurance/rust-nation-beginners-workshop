@@ -1,20 +1,12 @@
 pub fn is_leap_year(year: u64) -> bool {
-    year.is_divisible_by(400)
-        || year.is_divisible_by(4)
+    is_divisible_by(year, 400) ||
+            is_divisible_by(year, 4)
 }
 
-trait Divisible {
-    fn is_divisible_by(&self, divisor: u64) -> bool;
-
-    fn is_not_divisible_by(&self, divisor: u64) -> bool;
+fn is_divisible_by(year: u64, divisor: u64) -> bool {
+    year / divisor == 0
 }
 
-impl Divisible for u64 {
-    fn is_divisible_by(&self, divisor: u64) -> bool {
-        self / divisor == 0
-    }
-
-    fn is_not_divisible_by(&self, divisor: u64) -> bool {
-        !self.is_divisible_by(divisor)
-    }
+fn is_not_divisible_by(year: u64, divisor: u64) -> bool {
+    !is_divisible_by(year, divisor)
 }
