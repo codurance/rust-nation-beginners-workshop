@@ -18,7 +18,7 @@ fn main() {
     //2 - Should generate uppercase version of name
     // assert_eq!(mario.name_uppercase(), String::from("MARIO"));
 
-    //3 - Should reduce health by specified amunt
+    //3 - Should reduce health by specified amount
     // mario.take_damage(10);
     // assert_eq!(format!("{:?}", mario), "Player { name: \"Mario\", health: 90, items: [] }");
 
