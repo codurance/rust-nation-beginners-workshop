@@ -12,9 +12,11 @@ fn main() {
     execute_command(&mut position, &mut message, Command::Quit);
     assert_eq!(message, "Quitting...");
 
+    let mut message = String::new();
     execute_command(&mut position, &mut message, Command::Dance);
     assert_eq!(message, "You erupt into a passionate swing dance");
 
+    let mut message = String::new();
     execute_command(&mut position, &mut message, Command::Write(String::from("hello, world!")));
     assert_eq!(message, String::from("hello, world!"));
 
