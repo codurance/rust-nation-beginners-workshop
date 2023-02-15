@@ -5,7 +5,7 @@ fn main() {
     ban(&ingredients_to_ban_from_pizza, "anchovies");
     ban(&ingredients_to_ban_from_pizza, "the collected works of Leo Tolstoy");
 
-    print_banned_ingredients(&mut ingredients_to_ban_from_pizza);
+    print_banned_ingredients(ingredients_to_ban_from_pizza);
 }
 
 fn ban(ingredients_to_ban_from_pizza: String, ingredient: &str) {
@@ -13,6 +13,6 @@ fn ban(ingredients_to_ban_from_pizza: String, ingredient: &str) {
     ingredients_to_ban_from_pizza.push_str(", ");
 }
 
-fn print_banned_ingredients(ingredients_to_ban_from_pizza: &mut String) {
+fn print_banned_ingredients(ingredients_to_ban_from_pizza: String) {
     println!("{}", ingredients_to_ban_from_pizza);
 }
