@@ -9,7 +9,7 @@ pub struct InvulnerablePlayer {
 }
 
 fn main() {
-    //1 - Should construct a new Player object from name and health, and print debug info
+    //1 - Should construct a new Player object from health, and print debug info
 
     let mut mario = Player::new(100);
     assert_eq!(format!("{:?}", mario), "Player { items: [], health: 100 }");
