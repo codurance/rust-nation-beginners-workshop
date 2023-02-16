@@ -2,14 +2,14 @@
 
 ## Introduction
 
-Open the `1_start` project in your favourite IDE. This project has a few files, but the only one you need to care about is `src/lib.rs`. This contains a simple framework for a Tic-Tac-Toe app but the logic is not implemented. The `Cell` enum represents a single cell on the Tic-Tac-Toe grid- `Nort` being the circle shape, and `Cross` being the X shape. `None` represents an empty cell. The `MoveResult` enum represents the outcome of a move which may be that the game is still ongoing, or that the previous move was illegal, or that the game has ended in a win or draw.
+Open the `1_start` project in your favourite IDE. This project has a few files, but the only one you need to care about is `src/lib.rs`. This contains a simple framework for a Tic-Tac-Toe app but the logic is not implemented. The `Cell` enum represents a single cell on the Tic-Tac-Toe grid- `Nought` being the circle shape, and `Cross` being the X shape. `None` represents an empty cell. The `MoveResult` enum represents the outcome of a move which may be that the game is still ongoing, or that the previous move was illegal, or that the game has ended in a win or draw.
 
 The `Game` struct contains the state of the game- whose turn it is and what the state of the board is. The `state` attribute represents the board in a single-dimensional array such that `0`,`1` and `2` represent the three cells of the first row, `3,`,`4` and `5` represent the three cells of the second row and finally `6`, `7` and `8` represent the last row.
 
 There are two unimplemented methods:
 
-* `render` should return a string with an ASCII display of the board. Each line should be three characters each of which can be a space, an `O` (Nort) or an `X` (Cross).
-* `make_move` should place a piece in the given position on the board. If it is the first player's turn it should place a Nort, otherwise it should place a Cross.
+* `render` should return a string with an ASCII display of the board. Each line should be three characters each of which can be a space, an `O` (Nought) or an `X` (Cross).
+* `make_move` should place a piece in the given position on the board. If it is the first player's turn it should place a Nought, otherwise it should place a Cross.
 
 The only thing that is implemented is that a new game can be created with `Game::new()`. You have one test which is at the bottom of the file (as is convention in Rust). This test is not passing yet.
 

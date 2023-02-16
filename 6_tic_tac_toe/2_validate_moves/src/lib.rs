@@ -1,6 +1,6 @@
 #[derive(Clone, Copy, Debug, PartialEq)]
 enum Cell {
-    Nort,
+    Nought,
     Cross,
     None,
 }
@@ -54,14 +54,14 @@ impl Game {
 
         for (i, cell) in self.state.iter().enumerate() {
             result.push_str(match cell {
-                Cell::Nort => "O",
+                Cell::Nought => "O",
                 Cell::Cross => "X",
                 Cell::None => " ",
             });
 
             let is_last_character_in_line = (i + 1) % 3 == 0;
             let is_not_last_line = i < 8;
-            if  is_last_character_in_line && is_not_last_line {
+            if is_last_character_in_line && is_not_last_line {
                 result.push('\n')
             };
         }
@@ -73,7 +73,7 @@ impl Game {
         let mut state = self.state;
 
         state[x + (y * 3)] = match self.is_first_player_turn {
-            true => Cell::Nort,
+            true => Cell::Nought,
             false => Cell::Cross,
         };
 
@@ -94,12 +94,7 @@ mod tests {
 
         let actual = game.render();
 
-        assert_eq!(
-            concat!(
-                "   \n",
-                "   \n",
-                "   "),
-            actual)
+        assert_eq!(concat!("   \n", "   \n", "   "), actual)
     }
 
     #[test]
@@ -132,5 +127,4 @@ mod tests {
         let actual = game.render();
         assert_eq!(concat!("   \n", "O  \n", "   "), actual)
     }
-
 }

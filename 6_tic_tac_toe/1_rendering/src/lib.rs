@@ -1,6 +1,6 @@
 #[derive(Clone, Copy, Debug, PartialEq)]
 enum Cell {
-    Nort,
+    Nought,
     Cross,
     None,
 }
@@ -72,23 +72,17 @@ mod tests {
 
         let actual = game.render();
 
-        assert_eq!(
-            concat!(
-                "   \n",
-                "   \n",
-                "   "),
-            actual)
+        assert_eq!(concat!("   \n", "   \n", "   "), actual)
     }
 
     #[test]
     #[ignore]
     fn first_move_should_place_O_on_screen() {
         let mut game = Game::new();
-    
+
         game = game.make_move(0, 0).unwrap();
-    
+
         let actual = game.render();
         assert_eq!(concat!("O  \n", "   \n", "   "), actual)
     }
-
 }
